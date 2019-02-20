@@ -4,7 +4,7 @@ var inquirer = require("inquirer");
 
 var connection = mysql.createConnection({
   host: "localhost",
-  port: 3306,
+  port: 4500,
   user: "root",
   password: "root",
   database: "bamazon_db"
@@ -27,7 +27,7 @@ function begin() {
       {
         name: "id",
         type: "input",
-        message: "Enter the ID of the item you want to buy."
+        message: "Enter the name of the item you want to buy."
       }
     ])
       .then(function (answer) {
